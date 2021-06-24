@@ -16,7 +16,10 @@ function ListProject({ title, multipleTypes, projectList }) {
   const onChangeCategory = (id) => {
     setCurCategory(id);
   };
-  const nodeRef = useRef(null);
+  if (multipleTypes)
+    projectList = projectList.filter(
+      (project) => project.category.service === curCategory
+    );
   return (
     <div className={classes.root}>
       <div className={classes.container}>
@@ -45,30 +48,28 @@ function ListProject({ title, multipleTypes, projectList }) {
         {projectList ? (
           <Grid container spacing={3}>
             <TransitionGroup component={null}>
-              {projectList
-                .filter((project) => project.category.service === curCategory)
-                .map((project, index) => (
-                  <CSSTransition
-                    key={project.id}
-                    timeout={500}
-                    classNames={{
-                      enter: classes.listEnter,
-                      enterActive: classes.listEnterActive,
-                      exit: classes.listExit,
-                      exitActive: classes.listExitActive,
-                    }}
-                  >
-                    <Grid item lg={4} md={6} sm={6} xs={12} key={index}>
-                      <Project
-                        id={project.id}
-                        key={index}
-                        img={project?.img?.url}
-                        projectType={project.category.actualName}
-                        projectName={project.name}
-                      />
-                    </Grid>
-                  </CSSTransition>
-                ))}
+              {projectList.map((project, index) => (
+                <CSSTransition
+                  key={project.id}
+                  timeout={500}
+                  classNames={{
+                    enter: classes.listEnter,
+                    enterActive: classes.listEnterActive,
+                    exit: classes.listExit,
+                    exitActive: classes.listExitActive,
+                  }}
+                >
+                  <Grid item lg={4} md={6} sm={6} xs={12} key={index}>
+                    <Project
+                      id={project.id}
+                      key={index}
+                      img={project?.img?.url}
+                      projectType={project.category.actualName}
+                      projectName={project.name}
+                    />
+                  </Grid>
+                </CSSTransition>
+              ))}
             </TransitionGroup>
           </Grid>
         ) : (

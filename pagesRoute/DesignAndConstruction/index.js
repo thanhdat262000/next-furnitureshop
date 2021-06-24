@@ -1,16 +1,12 @@
-import React, { useEffect } from "react";
-import { useDispatch, useSelector } from "react-redux";
 import { useRouter } from "next/router";
+import React from "react";
 import DesignContent from "../../containers/DesignContent/DesignContent";
-import useStyles from "./styles";
 import ListProject from "../../containers/ListProjects/ListProject";
 import OpeningModal from "../../containers/OpeningModal/OpeningModal";
-import { GET_ALL_PROJECT_BY_SERVICE } from "../../redux/action";
-import { projectsSelector } from "../../redux/selector";
+import useStyles from "./styles";
 
-function DesignAndConstruction(props) {
+function DesignAndConstruction({ projects }) {
   const classes = useStyles();
-
   const listContents = [
     {
       type: "design",
@@ -72,11 +68,6 @@ function DesignAndConstruction(props) {
   const pageContent = listContents.filter(
     (content) => content.type === path
   )[0];
-  const dispatch = useDispatch();
-  useEffect(() => {
-    dispatch({ type: GET_ALL_PROJECT_BY_SERVICE, payload: { service: path } });
-  }, [dispatch, path]);
-  const projects = useSelector(projectsSelector);
   return (
     <div className={classes.root}>
       <OpeningModal
