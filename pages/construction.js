@@ -1,7 +1,16 @@
 import DesignAndConstruction from "../pagesRoute/DesignAndConstruction";
 import * as api from "../api";
+import Meta from "../components/Meta";
 function Design(props) {
-  return <DesignAndConstruction {...props} />;
+  return (
+    <>
+      <Meta
+        title="Thi công nội thất | Chung cư, nhà phố, khách sạn"
+        description="Thi công chung cư, nhà phố, khách sạn"
+      />
+      <DesignAndConstruction {...props} />
+    </>
+  );
 }
 
 export const getStaticProps = async () => {

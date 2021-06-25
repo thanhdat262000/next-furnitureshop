@@ -1,8 +1,14 @@
 import React from "react";
 import ProjectPage from "../../pagesRoute/Project";
 import * as api from "../../api";
+import Meta from "../../components/Meta";
 function Project(props) {
-  return <ProjectPage {...props} />;
+  return (
+    <>
+      <Meta title={props.project.name} description={props.project.name} />
+      <ProjectPage {...props} />
+    </>
+  );
 }
 export const getStaticPaths = async () => {
   const res = await api.getAllProjects();
