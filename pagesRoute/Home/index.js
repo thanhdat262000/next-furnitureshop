@@ -17,7 +17,7 @@ function HomePage({ projects }) {
       <SloganBanner />
       <IntroModal />
       <ListProject
-        title="Our projects so far"
+        title="Các dự án của chúng tôi"
         multipleTypes={true}
         projectList={projects}
       />

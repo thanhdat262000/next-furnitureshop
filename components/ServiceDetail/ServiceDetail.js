@@ -36,14 +36,13 @@ function ServiceDetail({ img, title, intro, link }) {
         </div>
         <div>
           <Typography>
-            Chào mừng Quý khách đến với NOITHATLUXHOME.COM !. Với quy mô nhà
-            xưởng lớn, trang bị máy móc hiện đại đến từ Ý, Đức, Nhật, cùng với
-            đội ngũ thợ tay nghề bậc cao trên 15 năm kinh nghiệm. Chúng tôi sản
-            xuất ra các phẩm chất lượng tốt nhất, mẫu mã hiện đại sang trọng,
-            theo kịp xu hướng nội thất phong cách Châu Âu. Mang đến ngôi nhà bạn
-            không gian nội thất hiện đại, sang trọng ! Từ các sản phẩm ĐỒ GỖ NỘI
-            THẤT như Bàn ghế ăn, bàn ghế phòng khách, Sofa, giường, tủ-kệ, tủ
-            bếp vv…
+            Chào mừng Quý khách đến với NEW FURNITURE !. Với quy mô nhà xưởng
+            lớn, trang bị máy móc hiện đại đến từ Ý, Đức, Nhật, cùng với đội ngũ
+            thợ tay nghề bậc cao trên 15 năm kinh nghiệm. Chúng tôi sản xuất ra
+            các phẩm chất lượng tốt nhất, mẫu mã hiện đại sang trọng, theo kịp
+            xu hướng nội thất phong cách Châu Âu. Mang đến ngôi nhà bạn không
+            gian nội thất hiện đại, sang trọng ! Từ các sản phẩm ĐỒ GỖ NỘI THẤT
+            như Bàn ghế ăn, bàn ghế phòng khách, Sofa, giường, tủ-kệ, tủ bếp vv…
           </Typography>
         </div>
         <CommonButton title="View services" />

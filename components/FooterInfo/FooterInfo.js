@@ -3,6 +3,7 @@ import React from "react";
 import CommonButton from "../CommomButton/CommonButton";
 import Divider from "@material-ui/core/Divider";
 import NavigateNextOutlinedIcon from "@material-ui/icons/NavigateNextOutlined";
+import Link from "next/link";
 import useStyles from "./styles";
 function FooterInfo({ intro, title, contact, links }) {
   const classes = useStyles();
@@ -29,10 +30,12 @@ function FooterInfo({ intro, title, contact, links }) {
         {links && (
           <div className={classes.navLinkContainer}>
             {links.map((link, index) => (
-              <div className={classes.navLink} key={index}>
-                <NavigateNextOutlinedIcon />
-                <Typography variant="caption">{link}</Typography>
-              </div>
+              <Link href={link.href} key={index}>
+                <a className={classes.navLink}>
+                  <NavigateNextOutlinedIcon />
+                  <Typography variant="caption">{link.title}</Typography>
+                </a>
+              </Link>
             ))}
           </div>
         )}

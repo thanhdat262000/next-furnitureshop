@@ -19,7 +19,7 @@ function SloganBanner(props) {
         </div>
         <div className={classes.slogan}>
           <Typography>
-            Chào mừng Quý khách đến với LUXYRYHOME.VN ! Tự hào là đơn vị đi đầu
+            Chào mừng Quý khách đến với NEW FURNITURE ! Tự hào là đơn vị đi đầu
             về công nghệ trong lĩnh vực sản xuất Đồ Gỗ Nội Thất. Với quy mô nhà
             xưởng lớn, trang bị máy móc hiện đại đến từ Ý, Đức, Nhật, cùng với
             đội ngũ thợ tay nghề bậc cao trên 15 năm kinh nghiệm. Chúng tôi sản

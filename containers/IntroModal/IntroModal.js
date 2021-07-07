@@ -14,14 +14,11 @@ function IntroModal(props) {
           <div></div>
         </div>
         <CustomModal
-          button="Read more"
-          topTitle="ABOUT US"
-          mainTitle="Details that matter. We make dream reality."
-          content="Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry’s standard dummy text
-              ever since the 1500s. When an unknown printer took a galley of
-              type and scrambled it to make a type specimen book. It has
-              survived not only five centuries."
+          button="TÌM HIỂU THÊM"
+          topTitle="VỀ CHÚNG TÔI"
+          mainTitle="MANG ĐẾN NHỮNG GIÁ TRỊ CỐT LÕI."
+          content="Chúng tôi luôn nỗ lực làm việc để mang đến những sản phẩm chất lượng nhất đến với khách hàng.
+           Với nhiều mẫu mã sang trọng, kiểu dáng phong phú, chúng tôi tin rằng sản phẩm của chúng tôi có thể làm hài lòng những khách hàng khó tính nhất."
         />
       </div>
     </div>

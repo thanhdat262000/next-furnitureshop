@@ -2,21 +2,24 @@ import { fade, makeStyles } from "@material-ui/core";
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    textDecoration: "none",
     display: "flex",
     flexDirection: "column",
     justifyContent: "flex-start",
     alignItems: "center",
     flexBasis: "23%",
     color: theme.palette.grey[500],
-    [theme.breakpoints.down('sm')]: {
-      margin: '2rem 0'
-    }
+    [theme.breakpoints.down("sm")]: {
+      margin: "2rem 0",
+    },
   },
   container: {
     width: "100%",
     height: "100%",
   },
   navLink: {
+    textDecoration: "none",
+    color: theme.palette.grey[500],
     display: "flex",
     justifyContent: "flex-start",
     alignItems: "center",
