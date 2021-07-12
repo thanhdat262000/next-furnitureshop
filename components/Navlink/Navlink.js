@@ -21,7 +21,12 @@ function Navlink({ title, listMenu, expand, link }) {
   const handleClose = () => {
     setIsMenuOpen(false);
   };
-  const { pathname } = useRouter();
+  const {
+    pathname,
+    query: { category },
+  } = useRouter();
+  let path;
+  if (category) path = `/category/${category}`;
   return (
     <div
       className={clsx({
@@ -56,7 +61,7 @@ function Navlink({ title, listMenu, expand, link }) {
                   <ListItem
                     className={clsx({
                       [classes.menuItem]: true,
-                      [classes.onSubMenuClick]: menu.link === pathname,
+                      [classes.onSubMenuClick]: menu.link === path,
                     })}
                     button
                     component="a"
