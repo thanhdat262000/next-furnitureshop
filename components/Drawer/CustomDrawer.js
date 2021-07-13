@@ -21,7 +21,12 @@ function CustomDrawer({
   listMenu,
 }) {
   const classes = useStyles();
-  const { pathname } = useRouter();
+  const {
+    pathname,
+    query: { category },
+  } = useRouter();
+  let path;
+  if (category) path = `/category/${category}`;
   return (
     <div className={classes.root}>
       <Drawer
@@ -78,7 +83,7 @@ function CustomDrawer({
                         className={clsx({
                           [classes.link]: true,
                           [classes.linkText]: true,
-                          [classes.onMenuClick]: subMenu.link === pathname,
+                          [classes.onMenuClick]: subMenu.link === path,
                         })}
                         key={index}
                         component="a"
