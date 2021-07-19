@@ -15,17 +15,17 @@ function ContactContent(props) {
   const listContacts = [
     {
       icon: <PermPhoneMsgOutlined />,
-      contactInfo: "(+84) 966 998 657",
+      contactInfo: "(+84) 944 121 665",
       content: "Call us any time from 08:00 till 17:00 Mon-Fri",
     },
     {
       icon: <MailOutlineRounded />,
-      contactInfo: "furniture@gmail.com",
+      contactInfo: "taminhngoc0402@gmail.com",
       content: "Email us anytime, we usually response in 24 hours",
     },
     {
       icon: <HomeWorkOutlined />,
-      contactInfo: "Hiep Hòa, Bac Giang",
+      contactInfo: "Hoàng Mai, Hà Nội",
       content: "Schedule your meeting before your visit",
     },
   ];

@@ -5,7 +5,7 @@ export default function Home({ projects }) {
   return (
     <>
       <Meta
-        title="New Furniture | Thiết kế & thi công nội thất hàng đầu Việt Nam"
+        title="Noithat93 | Thiết kế & thi công nội thất hàng đầu Việt Nam"
         description="Thiết kế, thi công nội thất khách sạn, nhà phố, chung cư"
       />
       <HomePage projects={projects} />{" "}
