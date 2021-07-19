@@ -3,8 +3,7 @@ import { makeStyles } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     width: "100%",
-
-    backgroundColor: "#222222",
+    backgroundColor: theme.palette.grey[900],
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -14,7 +13,6 @@ const useStyles = makeStyles((theme) => ({
     transition: `0.5s ${theme.transitions.easing.easeInOut}`,
   },
   content: {
-    marginTop: "30px",
     width: "95%",
     display: "flex",
     maxWidth: "1180px",
@@ -25,12 +23,12 @@ const useStyles = makeStyles((theme) => ({
     flexWrap: "wrap",
     position: "relative",
     [theme.breakpoints.down("sm")]: {
-      flexDirection: "column",
-      justifyContent: "flex-start",
-      alignItems: "flex-start",
+      justifyContent: "space-between",
+      alignItems: "center",
     },
   },
   navLink: {
+    marginTop: "45px",
     height: "100%",
     display: "flex",
     justifyContent: "flex-end",
@@ -53,20 +51,23 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "flex-start",
     alignItems: "center",
-    marginBottom: "30px",
+    marginBottom: "18px",
+    [theme.breakpoints.down("sm")]: {
+      marginTop: "18px",
+    },
   },
   menuIcon: {
     color: "white",
     "& svg": {
       fontSize: 32,
     },
-    marginBottom: "30px",
+    // marginBottom: "30px",
     display: "none",
     [theme.breakpoints.down("sm")]: {
       display: "block",
-      position: "absolute",
-      top: 0,
-      right: 0,
+      // position: "absolute",
+      // top: 0,
+      // right: 0,
     },
   },
 }));

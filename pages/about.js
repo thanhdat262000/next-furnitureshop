@@ -5,7 +5,7 @@ function About({ projects }) {
   return (
     <>
       <Meta
-        title="Giới thiệu về New Furniture"
+        title="Giới thiệu về Noithat93"
         description="Chúng tôi luôn nỗ lực để tạo ra những không gian đẹp nhất."
       />
       <AboutPage projects={projects} />

@@ -8,11 +8,9 @@ function AboutPage({ projects }) {
   return (
     <div className={classes.root}>
       <OpeningModal
-        topTitle="about us"
-        mainTitle="Welcome to our charming studio"
-        content="We are proud to present our work. These projects are built using
-          latest technologies and best talents. The benefits of our methods
-          guarantee quality for many years to come."
+        topTitle="Về chúng tôi"
+        mainTitle="Hãy đến với xưởng của chúng tôi"
+        content="Chúng tôi tự hào mang đến những sản phẩm tốt nhất. Những sản phẩm đó đều được chế tạo với những công nghệ tiên tiến nhất bởi những người thợ giỏi nhất."
       />
       <AboutContent projects={projects} />
     </div>

@@ -5,6 +5,7 @@ import Navlink from "../../components/Navlink/Navlink";
 import { IconButton } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 import CustomDrawer from "../../components/Drawer/CustomDrawer";
+import Link from "next/link";
 import useStyles from "./styles";
 const Header = (props) => {
   const [isOpen, setIsOpen] = useState(false);
@@ -64,9 +65,16 @@ const Header = (props) => {
   return (
     <div className={classes.root}>
       <div className={classes.content}>
-        <div className={classes.logo}>
-          <Image src="/img/logo1.png" alt="logo" width={200} height={45} />
-        </div>
+        <Link href="/">
+          <a className={classes.logo}>
+            <Image
+              src="/img/logoWhite.png"
+              alt="logo"
+              width={200}
+              height={75}
+            />
+          </a>
+        </Link>
         <CustomDrawer
           isOpen={isOpen}
           isDesignMenuOpen={isDesignMenuOpen}

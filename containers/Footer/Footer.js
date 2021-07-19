@@ -6,7 +6,7 @@ function Footer(props) {
   const classes = useStyles();
   const listFooterInfo = [
     {
-      title: "NEW FURNITURE VIỆT NAM",
+      title: "NOITHAT93",
       intro:
         "Trong quá trình hình thành và phát triển, LuxHome Việt Nam luôn vững vàng với mục tiêu lớn nhất là mang lại cho khách hàng những sản phẩm bất động sản có giá trị tốt nhất bằng sự phục vụ chuyên nghiệp nhất. ",
     },
@@ -50,9 +50,9 @@ function Footer(props) {
     {
       title: "THÔNG TIN LIÊN HỆ",
       contact: {
-        phone: "0966.998.657",
-        email: "thanhdat262000@gmail.com",
-        address: "Số 207 Trần Quốc Hoàn, Cầu Giấy, Hà Nội",
+        phone: "0944.121.665",
+        email: "taminhngoc0402@gmail.com",
+        address: "Số 1 Ngõ 255 Lĩnh Nam, Vĩnh Hưng, Hoàng Mai, Hà Nội",
       },
     },
   ];
