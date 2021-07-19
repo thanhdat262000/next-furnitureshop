@@ -67,12 +67,7 @@ const Header = (props) => {
       <div className={classes.content}>
         <Link href="/">
           <a className={classes.logo}>
-            <Image
-              src="/img/logoWhite.png"
-              alt="logo"
-              width={200}
-              height={75}
-            />
+            <Image src="/img/logo.png" alt="logo" width={200} height={75} />
           </a>
         </Link>
         <CustomDrawer
