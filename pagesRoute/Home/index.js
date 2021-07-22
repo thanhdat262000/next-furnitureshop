@@ -12,9 +12,6 @@ function HomePage({ projects }) {
   return (
     <div className={classes.root}>
       <Slider />
-      <ListServices />
-      <ListServiceDetails />
-      <SloganBanner />
       <IntroModal />
       <ListProject
         title="Các dự án của chúng tôi"

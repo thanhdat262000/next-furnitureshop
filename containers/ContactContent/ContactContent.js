@@ -25,7 +25,7 @@ function ContactContent(props) {
     },
     {
       icon: <HomeWorkOutlined />,
-      contactInfo: "Hoàng Mai, Hà Nội",
+      contactInfo: "Phúc Thọ, Hà Nội",
       content: "Schedule your meeting before your visit",
     },
   ];

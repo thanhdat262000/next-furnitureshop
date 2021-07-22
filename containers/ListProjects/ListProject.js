@@ -23,7 +23,7 @@ function ListProject({ title, multipleTypes, projectList }) {
   return (
     <div className={classes.root}>
       <div className={classes.container}>
-        <Typography component="p" variant="h4" className={classes.title}>
+        <Typography component="p" variant="h3" className={classes.title}>
           {title}
         </Typography>
         {multipleTypes && (

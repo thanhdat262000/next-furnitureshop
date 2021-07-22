@@ -8,7 +8,7 @@ function Footer(props) {
     {
       title: "NOITHAT93",
       intro:
-        "Trong quá trình hình thành và phát triển, LuxHome Việt Nam luôn vững vàng với mục tiêu lớn nhất là mang lại cho khách hàng những sản phẩm bất động sản có giá trị tốt nhất bằng sự phục vụ chuyên nghiệp nhất. ",
+        "Trong quá trình hình thành và phát triển, Noithat93 luôn vững vàng với mục tiêu lớn nhất là mang lại cho khách hàng những sản phẩm bất động sản có giá trị tốt nhất bằng sự phục vụ chuyên nghiệp nhất. ",
     },
     {
       title: "DỊCH VỤ",
@@ -52,7 +52,7 @@ function Footer(props) {
       contact: {
         phone: "0944.121.665",
         email: "taminhngoc0402@gmail.com",
-        address: "Số 1 Ngõ 255 Lĩnh Nam, Vĩnh Hưng, Hoàng Mai, Hà Nội",
+        address: "Xưởng Thanh Đa, Thanh Mạc, Phúc Thọ, Hà Nội",
       },
     },
   ];
