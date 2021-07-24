@@ -1,95 +1,170 @@
 import { Typography } from "@material-ui/core";
 import React from "react";
 import ListProject from "../ListProjects/ListProject";
+import Image from "next/image";
 import useStyles from "./styles";
+import clsx from "clsx";
 
 function AboutContent({ projects }) {
   const classes = useStyles();
   return (
     <div className={classes.root}>
       <div className={classes.container}>
-        <div className={classes.section1}>
-          <Typography variant="h4" className={classes.mainTitle}>
-            GIỚI THIỆU VỀ NewFurniture
-          </Typography>
-          <Typography className={classes.content}>
-            NewFurniture là một trong những công ty hàng đầu về thiết kế và thi
-            công nội thất. Bằng tâm huyết, bằng kinh nghiệm, sự nhiệt tình và
-            sáng tạo, đội ngũ NewFurniture tự tin mang đến cho khách hàng những
-            phong cách nội thất thẩm mỹ, nâng tầm giá trị cho căn nhà bạn. Đến
-            với chúng tôi, bạn chắc chắn sẽ hài lòng về không gian sống của
-            mình.
-          </Typography>
-          <Typography variant="h5" className={classes.subTitle}>
-            Tại sao NewFurniture thành lập và phát triển?
-          </Typography>
-          <Typography className={classes.content}>
-            Không gian sống của mỗi người thực sự rất quan trọng và luôn cần
-            phải được đảm bảo rằng nó đẹp, có thể đáp ứng được nhu cầu sinh hoạt
-            tối đa cho người dân. Tuy nhiên làm thế nào để có được một không
-            gian sống đẹp và hợp ý thì không phải ai cũng có thể làm được. Chính
-            bởi điều đó mà NewFurniture ra đời và thành lập nhằm mong muốn tư
-            vấn thiết kế, thi công nội thất để giúp mỗi một không gian sống của
-            quý khách hàng đều trở nên tuyệt vời hơn.
-          </Typography>
-          <Typography variant="h5" className={classes.subTitle}>
-            NewFurniture mang sứ mệnh nào?
-          </Typography>
-          <Typography className={classes.content}>
-            NewFurniture tự hào là đơn vị thiết kế và thi công kiến trúc nội
-            ngoại thất uy tín hàng đầu tại Việt Nam. NewFurniture khởi nguồn từ
-            những kiến trúc sư tâm huyết, sau 5 năm đi vào xây dựng và phát
-            triển, NewFurniture đã trở thành một đơn vị đáng tin cậy trong việc
-            tư vấn – thiết kế – thi công kiến trúc nội ngoại thất tại Việt Nam.
-          </Typography>
-          <Typography className={classes.content}>
-            Chúng tôi hoạt động với sứ mệnh rằng:
-          </Typography>
-          <ul>
-            <li>
-              <Typography className={classes.content}>
-                Cung cấp đến khách hàng những giá trị sáng tạo khi thiết kế, thi
-                công nội thất để không gian sống của quý khách hàng trở nên
-                tuyệt vời hơn.
-              </Typography>
-            </li>
-            <li>
-              <Typography className={classes.content}>
-                Là điểm đến tin cậy mỗi khi khách hàng có nhu cầu thiết kế, thi
-                công nội thất để sở hữu một nơi sống đích thực nhất.
-              </Typography>
-            </li>
-            <li>
-              <Typography className={classes.content}>
-                Mang lại cuộc sống ngày càng tốt đẹp hơn, đưa cuộc sống của mỗi
-                người không chỉ là sống mà còn là sự tận hưởng.
-              </Typography>
-            </li>
-          </ul>
-          <Typography className={classes.content}>
-            Với đội ngũ kiến trúc sư dày dặn kinh nghiệm, chúng tôi thiết kế
-            những công trình đẳng cấp như thiết kế biệt thự sang trọng, những
-            sản phẩm vượt trội về chất lượng, đáp ứng được đúng nhu cầu cũng như
-            sự kỳ vọng của khách hàng. NewFurniture không ngừng đổi mới, ngày
-            càng hoàn thiện và nhanh chóng khẳng định được vị thế thương hiệu là
-            một công ty tư vấn – thiết kế – thi công kiến trúc nội ngoại thất uy
-            tín với phong cách thiết kế rất riêng chỉ có ở NewFurniture.
-          </Typography>
-          <Typography variant="h5" className={classes.subTitle}>
-            Tầm nhìn của NewFurniture luôn không ngừng vươn xa
-          </Typography>
-          <Typography className={classes.content}>
-            Bằng chính sự đam mê và không ngừng học hỏi, đội ngũ của Home&Home
-            luôn cập nhật và bắt kịp xu thế kiến trúc nội ngoại thất trong và
-            ngoài nước. Mỗi sự nỗ lực cố gắng của chúng tôi đều đem lại cho
-            khách hàng sự hài lòng.
-          </Typography>
-          <Typography></Typography>
+        <Typography variant="h4" className={classes.mainTitle}>
+          Giới thiệu về Noithat93
+        </Typography>
+        <Typography className={classes.content}>
+          Noithat93 là một trong những công ty hàng đầu về thiết kế và thi công
+          nội thất. Bằng tâm huyết, bằng kinh nghiệm, sự nhiệt tình và sáng tạo,
+          đội ngũ NewFurniture tự tin mang đến cho khách hàng những phong cách
+          nội thất thẩm mỹ, nâng tầm giá trị cho căn nhà bạn. Đến với chúng tôi,
+          bạn chắc chắn sẽ hài lòng về không gian sống của mình.
+        </Typography>
+        <Typography variant="h4" className={classes.mainTitle}>
+          Dịch vụ của chúng tôi
+        </Typography>
+        <div className={classes.section}>
+          <div className={classes.subSection1}>
+            <Image
+              src="/img/service1.jpg"
+              alt="thiet-ke-noi-that"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="bottom"
+            />
+          </div>
+          <div className={classes.subSection2}>
+            <Typography variant="h6" className={classes.subTitle2}>
+              Thiết kế nội thất
+            </Typography>
+            <Typography className={classes.content}>
+              Với đội ngũ kiến trúc sư có nhiều năm kinh nghiệm cả trong thiết
+              kế và thi công nội thất, đã thực hiện hơn 100 dự án thiết kế lớn
+              nhỏ, luôn đặt thẩm mỹ và công năng sử dụng lên hàng đầu. Chúng tôi
+              tự tin sẽ mang đến dịch vụ tốt nhất: “Thẩm mỹ trong phối cảnh, an
+              toàn trong kết cấu, chính xác trong bản vẽ kỹ thuật”
+            </Typography>
+          </div>
         </div>
-        <div></div>
+        <div className={clsx(classes.section, classes.reverseSection)}>
+          <div className={classes.subSection1}>
+            <Image
+              src="/img/service1.jpg"
+              alt="thiet-ke-noi-that"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="bottom"
+            />
+          </div>
+          <div className={classes.subSection2}>
+            <Typography variant="h6" className={classes.subTitle2}>
+              Thi công công trình
+            </Typography>
+            <Typography className={classes.content}>
+              Lập kế hoạch đo đạc và lên dự toán một cách chi tiết và cụ thể
+              nhất – Tổ chức thi công các hạng mục đã ký kết với khách hàng theo
+              đúng thiết kế hoặc bản vẽ đã thống nhất trước đó – Giám sát và
+              quản lý đảm bảo dự án đúng tiến độ mà không làm ảnh hưởng đến chất
+              lượng thi công.
+            </Typography>
+          </div>
+        </div>
+        <div className={classes.section}>
+          <div className={classes.subSection1}>
+            <Image
+              src="/img/service1.jpg"
+              alt="thiet-ke-noi-that"
+              layout="fill"
+              objectFit="cover"
+              objectPosition="bottom"
+            />
+          </div>
+          <div className={classes.subSection2}>
+            <Typography variant="h6" className={classes.subTitle2}>
+              Sản xuất nội thất
+            </Typography>
+            <Typography className={classes.content}>
+              Sở hữu dây chuyền máy móc hiện đại và đội ngũ thợ lành nghề đã có
+              nhiều năm kinh nghiệm, Noithat93 mong muốn sẽ đem đến những sản
+              phẩm nội thất có kết cấu an toàn, thẩm mỹ và giá thành cạnh tranh
+              nhất. Đi kèm với chế độ bảo hành, cung cách phục vụ nhiệt tình –
+              chuyên nghiệp.
+            </Typography>
+          </div>
+        </div>
+        <Typography variant="h4" className={classes.mainTitle}>
+          Triết lý của chúng tôi
+        </Typography>
+        <div className={classes.phiContainer}>
+          <div className={classes.phiSubSection}>
+            <Typography variant="h6" className={classes.subTitle2}>
+              Luôn luôn lắng nghe khách hàng
+            </Typography>
+            <Typography className={classes.content}>
+              "Khách hàng là thượng đế". Chúng tôi luôn muốn lắng nghe những ý
+              kiến đóng góp của khách hàng để ngày càng cải thiện sản phẩm tốt
+              hơn. Sự hài lòng của quý khách chính là những gì chúng tôi hướng
+              đến.
+            </Typography>
+            <div className={classes.phiImage}>
+              <Image
+                src="/img/listen.png"
+                layout="fill"
+                alt="listen"
+                objectFit="contain"
+                objectPosition="top"
+              />
+            </div>
+          </div>
+          <div className={classes.phiSubSection}>
+            <Typography variant="h6" className={classes.subTitle2}>
+              Luôn học hỏi, cải tiến công nghệ, nâng cao chất lượng
+            </Typography>
+            <Typography className={classes.content}>
+              Mục tiêu trở thành một công ty hàng đầu về thiết kế và thi công
+              nội thất trong một thị trường cạnh tranh và biến đổi không ngừng.
+              Chúng tôi luôn luôn chú trọng trong việc đào tạo và tìm kiếm những
+              kiến trúc sư tài năng, những người thợ lành nghề để nâng cao năng
+              suất và chất lượng của sản phẩm cũng như hoàn thiện hệ thống công
+              nghệ máy móc thiết bị sản xuất phục vụ cho công việc
+            </Typography>
+            <div className={classes.phiImage}>
+              <Image
+                src="/img/learn.jpg"
+                layout="fill"
+                alt="listen"
+                objectFit="contain"
+                objectPosition="top"
+              />
+            </div>
+          </div>
+          <div className={classes.phiSubSection}>
+            <Typography variant="h6" className={classes.subTitle2}>
+              Tính sáng tạo được đặt lên hàng đầu.
+            </Typography>
+            <Typography className={classes.content}>
+              Chúng tôi coi trọng và tạo cơ chế đặc biệt để sự sáng tạo, đổi mới
+              được duy trì và phát triển mạnh mẽ trong Công ty. Sáng tạo và đổi
+              mới là cách duy nhất giúp chúng tôi thích nghi và đáp ứng yêu cầu
+              ngày càng cao của khách hàng, đồng thời là cách thức chúng tôi tạo
+              lợi thế cạnh tranh bền vững. Sáng tạo và đổi mới mà chúng tôi nói
+              đến bao gồm cả tư duy, phương pháp, công cụ lẫn cách thức hành
+              động.
+            </Typography>
+            <div className={classes.phiImage}>
+              <Image
+                src="/img/creative.jpg"
+                layout="fill"
+                alt="listen"
+                objectFit="contain"
+                objectPosition="top"
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <ListProject
-        title="Latest projects"
+        title="Dự án mới nhất"
         multipleTypes={true}
         projectList={projects}
       />
