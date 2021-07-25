@@ -22,12 +22,18 @@ const useStyles = makeStyles((theme) => ({
     alignItems: "flex-start",
     minHeight: "150px",
     margin: "0.75rem 0",
+    [theme.breakpoints.down("xs")]: {
+      flexDirection: "column-reverse !important",
+    },
   },
   subSection1: {
     position: "relative",
     flexBasis: "38%",
     height: "100%",
     minHeight: "175px",
+    [theme.breakpoints.down("xs")]: {
+      width: "100%",
+    },
   },
   subSection2: {
     display: "flex",
@@ -35,6 +41,9 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "flex-start",
     flexBasis: "59%",
     height: "100%",
+    [theme.breakpoints.down("xs")]: {
+      marginTop: "0.75rem",
+    },
   },
   mainTitle: { margin: "0.75rem 0" },
   subTitle: {
@@ -54,6 +63,9 @@ const useStyles = makeStyles((theme) => ({
     justifyContent: "space-between",
     alignItems: "flex-start",
     marginTop: "0.75rem",
+    [theme.breakpoints.down("xs")]: {
+      flexDirection: "column",
+    },
   },
   phiSubSection: {
     flexBasis: "32%",

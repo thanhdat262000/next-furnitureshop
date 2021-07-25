@@ -101,10 +101,10 @@ function AboutContent({ projects }) {
               Luôn luôn lắng nghe khách hàng
             </Typography>
             <Typography className={classes.content}>
-              "Khách hàng là thượng đế". Chúng tôi luôn muốn lắng nghe những ý
-              kiến đóng góp của khách hàng để ngày càng cải thiện sản phẩm tốt
-              hơn. Sự hài lòng của quý khách chính là những gì chúng tôi hướng
-              đến.
+              &quot;Khách hàng là thượng đế&quot;. Chúng tôi luôn muốn lắng nghe
+              những ý kiến đóng góp của khách hàng để ngày càng cải thiện sản
+              phẩm tốt hơn. Sự hài lòng của quý khách chính là những gì chúng
+              tôi hướng đến.
             </Typography>
             <div className={classes.phiImage}>
               <Image
