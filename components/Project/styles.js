@@ -22,7 +22,9 @@ const useStyles = makeStyles((theme) => ({
     display: "flex",
     justifyContent: "center",
     alignItems: "flex-end",
-    backgroundPosition: "center",
+    backgroundPosition: "center bottom",
+    backgroundSize: "cover",
+    backgroundRepeat: "no-repeat",
   },
   overlay: {
     width: "100%",
