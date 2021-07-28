@@ -163,11 +163,6 @@ function AboutContent({ projects }) {
           </div>
         </div>
       </div>
-      <ListProject
-        title="Dự án mới nhất"
-        multipleTypes={true}
-        projectList={projects}
-      />
     </div>
   );
 }

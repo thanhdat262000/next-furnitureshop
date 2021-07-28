@@ -19,7 +19,7 @@ function FooterInfo({ intro, title, contact, links }) {
         )}
         {contact && (
           <div className={classes.navLinkContainer}>
-            <Typography variant="caption">Phone: {contact.phone}</Typography>{" "}
+            <Typography variant="caption">Sđt: {contact.phone}</Typography>{" "}
             <Typography variant="caption">Email: {contact.email}</Typography>{" "}
             <Typography variant="caption">
               Địa chỉ: {contact.address}
