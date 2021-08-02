@@ -8,23 +8,22 @@ function ListStep(props) {
     { intro: true },
     {
       stepNumber: "01",
-      mainTitle: "Plan",
+      mainTitle: "Kế hoạch",
       content:
-        "When an unknown printer tôk a gallery of type and scrambled it to make a book",
+        "Lên kế hoạch chẳ chẽ cho công trình. Xác định những công đoạn cần thực hiện",
       button: "Read more",
     },
     {
       stepNumber: "02",
-      mainTitle: "Design",
+      mainTitle: "Thiết kế",
       content:
-        "When an unknown printer tôk a gallery of type and scrambled it to make a book",
+        "Với đội ngũ kiến trúc sư lành nghê, chúng tôi thiết kế ra những bản vẽ đẹp nhất.",
       button: "Read more",
     },
     {
       stepNumber: "03",
-      mainTitle: "Execute",
-      content:
-        "When an unknown printer tôk a gallery of type and scrambled it to make a book",
+      mainTitle: "Thi công",
+      content: "Bẳt tay vào việc thực thi theo kế hoạch đã đề ra",
       button: "Read more",
     },
   ];

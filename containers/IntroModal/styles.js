@@ -28,8 +28,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down(780)]: {
       maxWidth: "700px",
       width: "100%",
-      backgroundPosition: "center center",
     },
+    backgroundPosition: "bottom center",
+    backgroundSize: "cover",
   },
 }));
 export default useStyles;

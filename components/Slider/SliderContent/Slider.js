@@ -34,6 +34,7 @@ function Slider(props) {
             alt="noithat1"
             layout="fill"
             objectFit="cover"
+            objectPosition="bottom"
           />
         </div>
         <div className={classes.imageContainer}>
@@ -42,6 +43,7 @@ function Slider(props) {
             alt="noithat2"
             layout="fill"
             objectFit="cover"
+            objectPosition="bottom"
           />
         </div>
         <div className={classes.imageContainer}>
@@ -50,6 +52,7 @@ function Slider(props) {
             alt="noithat3"
             layout="fill"
             objectFit="cover"
+            objectPosition="bottom"
           />
         </div>
       </Carousel>

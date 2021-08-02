@@ -9,9 +9,9 @@ function StepByStep({ intro, stepNumber, mainTitle, content, button }) {
   return intro ? (
     <div className={classes.basis}>
       <div>
-        <TopTitle title="HOW WE WORK" />
+        <TopTitle title="Cách chúng tôi làm việc" />
       </div>
-      <Typography variant="h4">Proven Process for top result</Typography>
+      <Typography variant="h4">Kết quả là minh chứng cho quá trình</Typography>
     </div>
   ) : (
     <div className={clsx(classes.root, classes.basis)}>

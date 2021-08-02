@@ -9,7 +9,7 @@ function IntroModal(props) {
       <div className={classes.container}>
         <div
           className={classes.image}
-          style={{ backgroundImage: "url(/img/intro.png)" }}
+          style={{ backgroundImage: "url(/img/intro.jpg)" }}
         >
           <div></div>
         </div>
