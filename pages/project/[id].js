@@ -28,6 +28,7 @@ export const getStaticProps = async ({ params }) => {
     props: {
       project,
     },
+    revalidate: 1800,
   };
 };
 export default Project;
