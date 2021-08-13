@@ -9,7 +9,7 @@ function CategoryPage({ projects, categoryType, serviceType }) {
       <OpeningModal
         topTitle={categoryType}
         mainTitle={`${serviceType} ${categoryType}`}
-        content="We are proud to present our work. These projects are built using latest technologies and best talents. The benefits of our methods guarantee quality for many years to come."
+        content="Những dự án của chúng tôi được xây dựng dựa trên các công nghệ mới nhất, hiện đạt nhất"
       />
       <CategoryContent
         serviceType={serviceType}

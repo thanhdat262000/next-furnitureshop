@@ -16,17 +16,17 @@ function ContactContent(props) {
     {
       icon: <PermPhoneMsgOutlined />,
       contactInfo: "(+84) 944 121 665",
-      content: "Call us any time from 08:00 till 17:00 Mon-Fri",
+      content: "Liên hệ trực tiếp qua số điện thoại",
     },
     {
       icon: <MailOutlineRounded />,
       contactInfo: "taminhngoc0402@gmail.com",
-      content: "Email us anytime, we usually response in 24 hours",
+      content: "Liên hệ qua email",
     },
     {
       icon: <HomeWorkOutlined />,
       contactInfo: "Phúc Thọ, Hà Nội",
-      content: "Schedule your meeting before your visit",
+      content: "Đặt lịch hẹn gặp mặt trực tiếp",
     },
   ];
   return (

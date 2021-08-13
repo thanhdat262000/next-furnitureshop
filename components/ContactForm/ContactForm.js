@@ -19,14 +19,14 @@ function ContactForm(props) {
       .then((response) => {
         setIsLoading(false);
         if (response.status === 200) {
-          setSendStatus("Send successfully!");
-        } else setSendStatus("An error occur!");
+          setSendStatus("Gửi thành công!");
+        } else setSendStatus("Có lỗi xảy ra, vui lòng thử lại!");
       })
-      .catch((error) => setSendStatus("Error!"));
+      .catch((error) => setSendStatus("Có lỗi xảy ra, vui lòng thử lại!"));
   };
   const listInput = [
-    { name: "name", label: "Name" },
-    { name: "address", label: "Address" },
+    { name: "name", label: "Tên" },
+    { name: "address", label: "Địa chỉ" },
     {
       name: "number",
       label: "Number",
@@ -39,18 +39,18 @@ function ContactForm(props) {
         pattern: {
           value:
             /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
-          message: "Invalid email",
+          message: "Email không hợp lệ!",
         },
       },
     },
-    { name: "content", label: "You want to say..." },
+    { name: "content", label: "Lời nhắn" },
   ];
   return (
     <div className={classes.root}>
       <div className={classes.container}>
-        <TopTitle title="CONTACT US" />
+        <TopTitle title="LIỆN HỆ" />
         <Typography variant="h4" className={classes.mainTitle}>
-          Creative project? Let&#39;s have a productive talk.
+          Gửi ý kiến cho chúng tôi
         </Typography>
         <form
           onSubmit={handleSubmit(onSubmit)}
@@ -76,12 +76,12 @@ function ContactForm(props) {
                   rows={5}
                   helperText={
                     errors[input.name]?.type === "required"
-                      ? "This field is required"
+                      ? "Vui lòng điền thông tin"
                       : errors[input.name]?.type === "pattern"
-                      ? "Invalid email"
+                      ? "Email không hợp lệ"
                       : errors[input.name]?.type === "min" ||
                         errors[input.name]?.type === "max"
-                      ? "Invalid age"
+                      ? "Tuổi không hợp lệ"
                       : ""
                   }
                 />
@@ -90,7 +90,7 @@ function ContactForm(props) {
           ))}
 
           <button type="submit" className={classes.submitButton}>
-            <Typography>Send</Typography>
+            <Typography>Gửi</Typography>
           </button>
           <div className={classes.sendStatus}>
             {isLoading ? (

@@ -11,10 +11,10 @@ function DesignAndConstruction({ projects }) {
     {
       type: "design",
       content: {
-        introTopTitle: "design",
-        introMainTitle: "Welcome to our services",
+        introTopTitle: "thiết kế",
+        introMainTitle: "Thiết kế nội thất",
         introContent:
-          "We are proud to present our work. These projects are built using latest technologies and best talents. The benefits of our methods guarantee quality for many years to come.",
+          "Chúng tôi tự hào khi mang đến sản phẩm, dịch vụ chất lượng thoe thờ gian",
         listThumbnails: [
           {
             title: "Nội thất chung cư",
@@ -38,10 +38,10 @@ function DesignAndConstruction({ projects }) {
     {
       type: "construction",
       content: {
-        introTopTitle: "construction",
-        introMainTitle: "Welcome to our services",
+        introTopTitle: "thi công",
+        introMainTitle: "Thi công nội thất",
         introContent:
-          "We are proud to present our work. These projects are built using latest technologies and best talents. The benefits of our methods guarantee quality for many years to come.",
+          "Chúng tôi tự hào khi mang đến sản phẩm, dịch vụ chất lượng thoe thờ gian",
         listThumbnails: [
           {
             title: "Thi công chung cư",

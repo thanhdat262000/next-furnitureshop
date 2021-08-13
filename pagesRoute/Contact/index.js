@@ -5,9 +5,9 @@ function ContactPage(props) {
   return (
     <div>
       <OpeningModal
-        topTitle="Contact us"
-        mainTitle="Let's get in touch"
-        content="Work with us for more infomation"
+        topTitle="Liện hệ"
+        mainTitle="Liên hệ với chúng tôi ngay!"
+        content="Trở thành khách hàng của chúng tôi để trải nghiệm những sản phẩm tốt nhất"
       />
       <ContactContent />
     </div>
