@@ -23,7 +23,7 @@ const Header = (props) => {
   };
   const listMenu = [
     { title: "trang chủ", link: "/" },
-    { title: "giới thiệu", link: "/about" },
+    { title: "giới thiệu", link: "/gioi-thieu" },
     {
       title: "thiết kế",
       expand: true,
@@ -60,7 +60,7 @@ const Header = (props) => {
       link: "/construction",
     },
     { title: "tin tức", link: "/news" },
-    { title: "liên hệ", link: "/contact" },
+    { title: "liên hệ", link: "/lien-he" },
   ];
   return (
     <div className={classes.root}>

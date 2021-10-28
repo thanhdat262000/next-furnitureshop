@@ -1,7 +1,7 @@
 import { createMuiTheme } from "@material-ui/core/styles";
 const theme = createMuiTheme({
   typography: {
-    fontFamily: "Nunito",
+    fontFamily: "Montserrat",
     h6: {
       lineHeight: 1.2,
     },
