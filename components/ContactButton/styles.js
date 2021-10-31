@@ -25,7 +25,7 @@ const useStyles = makeStyles((theme) => ({
   },
   container: {
     width: "95%",
-    maxWidth: "590px",
+    maxWidth: "600px",
     display: "flex",
     justifyContent: "space-between",
     alignItems: "center",

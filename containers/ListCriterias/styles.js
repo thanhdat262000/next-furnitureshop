@@ -13,9 +13,15 @@ const useStyles = makeStyles((theme) => ({
   container: {
     width: "95%",
     maxWidth: "1180px",
-    display: "grid",
-    gridTemplateColumns: "1fr 1fr 1fr 1fr",
-    columnGap: "32px",
+    "& > div": {
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr 1fr 1fr",
+      columnGap: "32px",
+      [theme.breakpoints.down(780)]: {
+        gridTemplateColumns: "1fr",
+        rowGap: "24px",
+      },
+    },
   },
   title: {
     marginBottom: "2.5rem",

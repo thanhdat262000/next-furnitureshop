@@ -1,6 +1,6 @@
 import { Typography } from "@material-ui/core";
 import {
-  VerifiedUserRounded,
+  VerifiedUserOutlined,
   LocalAtmOutlined,
   EmojiObjectsOutlined,
   EmojiEmotionsOutlined,
@@ -11,7 +11,7 @@ function ListCriterias(props) {
   const classes = useStyles();
   const listCriterias = [
     {
-      icon: <VerifiedUserRounded />,
+      icon: <VerifiedUserOutlined />,
       title: "Đảm bảo chất lượng",
       content:
         "Chất lượng là tiêu chứ đầu tiên mà chúng tôi cam kết mang đến cho khách hàng trong tất cả các khâu",
@@ -37,21 +37,23 @@ function ListCriterias(props) {
   ];
   return (
     <div className={classes.root}>
-      <Typography variant="h4" className={classes.title}>
-        THI CÔNG NỘI THẤT TRỌN GÓI TẠI NỘI THẤT 93
-      </Typography>
       <div className={classes.container}>
-        {listCriterias.map((item, index) => (
-          <div className={classes.item} key={index}>
-            {item.icon}
-            <Typography variant="h6" align="center">
-              {item.title}
-            </Typography>
-            <Typography variant="body1" align="center">
-              {item.content}
-            </Typography>
-          </div>
-        ))}
+        <Typography variant="h4" align="center" className={classes.title}>
+          THI CÔNG NỘI THẤT TRỌN GÓI TẠI NỘI THẤT 93
+        </Typography>
+        <div>
+          {listCriterias.map((item, index) => (
+            <div className={classes.item} key={index}>
+              {item.icon}
+              <Typography variant="h6" align="center">
+                {item.title}
+              </Typography>
+              <Typography variant="body1" align="center">
+                {item.content}
+              </Typography>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );
