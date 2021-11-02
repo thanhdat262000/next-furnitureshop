@@ -75,7 +75,7 @@ function DesignAndConstruction({ projects }) {
         mainTitle={pageContent.content.introMainTitle}
         content={pageContent.content.introContent}
       />
-      <DesignContent listThumbnails={pageContent.content.listThumbnails} />
+      {/* <DesignContent listThumbnails={pageContent.content.listThumbnails} /> */}
       <ListProject
         title={pageContent.content.listProjectsTitle}
         projectList={projects}
