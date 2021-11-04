@@ -17,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
   container: {
     width: "100%",
-    minHeight: "220px",
+    height: "220px",
     display: "flex",
     justifyContent: "center",
     alignItems: "flex-end",
