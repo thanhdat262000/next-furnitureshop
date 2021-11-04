@@ -14,7 +14,7 @@ function ListCriterias(props) {
       icon: <VerifiedUserOutlined />,
       title: "Đảm bảo chất lượng",
       content:
-        "Chất lượng là tiêu chứ đầu tiên mà chúng tôi cam kết mang đến cho khách hàng trong tất cả các khâu",
+        "Chất lượng là tiêu chí đầu tiên mà chúng tôi cam kết mang đến cho khách hàng trong tất cả các khâu",
     },
     {
       icon: <LocalAtmOutlined />,

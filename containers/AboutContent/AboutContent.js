@@ -16,9 +16,9 @@ function AboutContent({ projects }) {
         <Typography className={classes.content}>
           Noithat93 là một trong những công ty hàng đầu về thiết kế và thi công
           nội thất. Bằng tâm huyết, bằng kinh nghiệm, sự nhiệt tình và sáng tạo,
-          đội ngũ NewFurniture tự tin mang đến cho khách hàng những phong cách
-          nội thất thẩm mỹ, nâng tầm giá trị cho căn nhà bạn. Đến với chúng tôi,
-          bạn chắc chắn sẽ hài lòng về không gian sống của mình.
+          đội ngũ Noithat93 tự tin mang đến cho khách hàng những phong cách nội
+          thất thẩm mỹ, nâng tầm giá trị cho căn nhà bạn. Đến với chúng tôi, bạn
+          chắc chắn sẽ hài lòng về không gian sống của mình.
         </Typography>
         <Typography variant="h4" className={classes.mainTitle}>
           Dịch vụ của chúng tôi

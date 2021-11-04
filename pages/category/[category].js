@@ -48,6 +48,7 @@ export const getStaticProps = async ({ params }) => {
       projects,
       params,
     },
+    revalidate: 60,
   };
 };
 
