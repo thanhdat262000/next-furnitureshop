@@ -2,7 +2,6 @@ import { fade, makeStyles } from "@material-ui/core";
 const useStyles = makeStyles((theme) => ({
   root: {
     textDecoration: "none",
-    height: "280px",
     display: "flex",
     flexDirection: "column",
     justifyContent: "center",
@@ -18,7 +17,7 @@ const useStyles = makeStyles((theme) => ({
   },
   container: {
     width: "100%",
-    height: "100%",
+    minHeight: "220px",
     display: "flex",
     justifyContent: "center",
     alignItems: "flex-end",
