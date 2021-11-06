@@ -29,7 +29,7 @@ function ContactForm(props) {
     { name: "address", label: "Địa chỉ" },
     {
       name: "number",
-      label: "Number",
+      label: "Số điện thoại",
       rule: { min: 16, max: 99 },
     },
     {
