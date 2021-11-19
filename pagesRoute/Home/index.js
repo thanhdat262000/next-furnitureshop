@@ -29,7 +29,10 @@ function HomePage({ projects }) {
     {
       content: (
         <Typography variant="body1">
-          Email: <b> taminhngoc0402@gmail.com </b>
+          Email:{" "}
+          <a href="mailto:taminhngoc0402@gmail.com">
+            <b> taminhngoc0402@gmail.com </b>
+          </a>
         </Typography>
       ),
     },
@@ -44,9 +47,15 @@ function HomePage({ projects }) {
       content: (
         <Typography variant="body1">
           Số điện thoại:{" "}
-          <Typography component="span" variant="h5" style={{ fontWeight: 700 }}>
-            0944 121 665
-          </Typography>
+          <a href="tel:0944121665">
+            <Typography
+              component="span"
+              variant="h5"
+              style={{ fontWeight: 700 }}
+            >
+              0944 121 665
+            </Typography>
+          </a>
         </Typography>
       ),
     },
