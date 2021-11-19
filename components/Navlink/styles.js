@@ -56,6 +56,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down("sm")]: {
       margin: "20px 0 20px 10px",
     },
+    fontWeight: 500,
   },
   "keyframes liner": {
     "0%": {
