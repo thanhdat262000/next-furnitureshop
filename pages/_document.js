@@ -34,7 +34,38 @@ export default class MyDocument extends Document {
             sizes="16x16"
             href="/favicon-16x16.png"
           />
+          <link rel="canonical" href="https://www.noithat93.com"></link>
           <link rel="manifest" href="/site.webmanifest"></link>
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:site" content="Noithat93" />
+          <meta
+            name="twitter:title"
+            content="Noithat93 | Thiết kế, thi công nội thất"
+          />
+          <meta
+            name="twitter:description"
+            content="Thiết kế, thi công nội thất hàng đầu Việt Nam"
+          />
+          <meta
+            name="twitter:image"
+            content="https://res.cloudinary.com/furnitureshopadminapi/image/upload/v1636044392/z2894069167495_41a9c1b9ed023bc1723ca030c0025861_2a10a985c1.jpg"
+          />
+          {/* Facebook */}
+          <meta property="fb:app_id" content="394734905518135" />
+          <meta property="og:type" content="website" />
+          <meta property="og:title" content="Noithat93" />
+          <meta
+            property="og:description"
+            content="Thiết kế, thi công nội thất hàng đầu Việt Nam"
+          />
+          <meta
+            property="og:image"
+            content="https://res.cloudinary.com/furnitureshopadminapi/image/upload/v1636044392/z2894069167495_41a9c1b9ed023bc1723ca030c0025861_2a10a985c1.jpg"
+          />
+          <meta property="og:image:width" content="200" />
+          <meta property="og:image:height" content="200" />
+          <meta property="og:locale" content="en_EN" />
+          <meta property="og:url" content="https://www.noithat93.com" />
         </Head>
         <body>
           <Main />

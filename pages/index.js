@@ -1,7 +1,6 @@
 import * as api from "../api";
 import Meta from "../components/Meta";
 import HomePage from "../pagesRoute/Home";
-import MessengerCustomerChat from "react-messenger-customer-chat";
 export default function Home({ projects }) {
   return (
     <>
@@ -10,7 +9,6 @@ export default function Home({ projects }) {
         description="Thiết kế, thi công nội thất khách sạn, nhà phố, chung cư"
       />
       <HomePage projects={projects} />{" "}
-      <MessengerCustomerChat pageId="106189040983304" appId="394734905518135" />
     </>
   );
 }
