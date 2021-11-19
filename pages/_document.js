@@ -51,7 +51,6 @@ export default class MyDocument extends Document {
             content="https://res.cloudinary.com/furnitureshopadminapi/image/upload/v1636044392/z2894069167495_41a9c1b9ed023bc1723ca030c0025861_2a10a985c1.jpg"
           />
           {/* Facebook */}
-          <meta property="fb:app_id" content="394734905518135" />
           <meta property="og:type" content="website" />
           <meta property="og:title" content="Noithat93" />
           <meta
